@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.starContainer {
+    /* border: 1px solid red; */
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.starTop {
+    color: white;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0.3;
+    background-color: rgb(117, 145, 161);
+    /* border: 1px solid green; */
+}
+
+.starBottom {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-grow: 0.7;
+    /* border: 1px solid gold; */
+    background-color: rgb(183, 209, 218);
+}
+
+.starBottom i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.301);
+}
+
+.star {
+    transition: all 200ms ease;
+}
+
+.star.active {
+    color: rgb(218, 187, 11);
+}
+
+.star.hovered {
+    /* color: rgb(146, 126, 10); */
+    color: rgb(218, 187, 11);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
