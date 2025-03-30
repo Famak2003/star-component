@@ -1,9 +1,7 @@
 const starList = document.querySelectorAll("i");
 const starBox = document.querySelector(".starBottom");
 const starListArr = Array.from(starList);
-// console.log(starBox);
 
-// console.log(starList[0])
 let count;
 starBox.addEventListener("click", function (e) {
   const num = Number(e.target.dataset.num);
